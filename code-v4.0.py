@@ -17,9 +17,10 @@ def encrypt(str, y):
         add = c + y
         if (add > 122) and (add >= 99):
             add = add - 26
-        x = chr(add)
-        enciphered_list.append(x)
+        
         if (add >= 65) and (add <96):
             add = add - 26
+        x = chr(add)
+        enciphered_list.append(x)
 encrypt(plaintext, 5)
 print(enciphered_list)
